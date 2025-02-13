@@ -1,0 +1,40 @@
+<script src="TimingCode.js"></script>
+<script src="Timer.js"></script>
+<script>
+    function runTimingCode(x)
+    {
+        if(x === 1)
+        {
+            timer.setStart();
+            console.log(methods.slow(1000000000));
+            timer.setEnd();
+            timer.logTime();
+        }
+        if(x === 2)
+        {
+            timer.setStart();
+            console.log(methods.efficient(1000000000));
+            timer.setEnd();
+            timer.logTime();
+        }
+        if(x === 3)
+        {
+            timer.setStart();
+            methods.countUpAndDown(100000);
+            timer.setEnd();
+            timer.logTime();
+        }
+        if(x === 4)
+        {
+            timer.setStart();
+            methods.printAllPairs(500);
+            timer.setEnd();
+            timer.logTime();
+        }
+    }
+
+</script>
+<button onclick="runTimingCode(1)">Slow Method</button>
+<button onclick="runTimingCode(2)">Efficient Method</button>
+<button onclick="runTimingCode(3)">Count Up And Down</button>
+<button onclick="runTimingCode(4)">Print All Pairs</button>
