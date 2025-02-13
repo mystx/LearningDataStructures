@@ -31,6 +31,13 @@
             timer.setEnd();
             timer.logTime();
         }
+        if(x === 5)
+        {
+            timer.setStart();
+            methods.logAtLeast5(6);
+            timer.setEnd();
+            timer.logTime();
+        }
     }
 
 </script>
@@ -38,3 +45,4 @@
 <button onclick="runTimingCode(2)">Efficient Method</button>
 <button onclick="runTimingCode(3)">Count Up And Down</button>
 <button onclick="runTimingCode(4)">Print All Pairs</button>
+<button onclick="runTimingCode(5)">Log at least 5</button>

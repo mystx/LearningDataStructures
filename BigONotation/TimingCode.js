@@ -63,5 +63,17 @@ methods = {
                 console.log(i,j);
             }
         }
+    },
+    /**
+     * logs at least 5
+     * Big O is: O(5n) min
+     * But its really O(N)
+     * at scale 5n wont matter so just n
+     * @param {number} n 
+     */
+    logAtLeast5: (n) => {
+        for(i=1;i<=Math.max(5,n);i++) {
+            console.log(i)
+        }
     }
 }
